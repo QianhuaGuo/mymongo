@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @Author: Watermelon
@@ -46,4 +47,7 @@ public class Comment {
     private String parentid;//上级id
 
     private String articleid;//文章id
+
+    private List<String> likename;
+
 }

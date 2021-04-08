@@ -10,6 +10,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.LocalDateTime;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -38,14 +39,20 @@ public class CommentTest {
     @Test
     public void saveComment(){
         Comment comment = new Comment();
-        comment.setArticleid("1004");
-        comment.setContent("测试添加的数据4");
+        comment.setArticleid("1009");
+        comment.setContent("测试添加的数据9");
         comment.setCreatedatetime(LocalDateTime.now());
-        comment.setUserid("1005");
-        comment.setNickname("喵喵");
+        comment.setUserid("1009");
+        comment.setNickname("嘻嘻嘻");
         comment.setLikenum(0);
         comment.setState("1");
         comment.setReplynum(0);
+        List<String> likenames = new LinkedList<>();
+        likenames.add("qianhua");
+        likenames.add("hahah");
+        likenames.add("wulalala");
+        likenames.add("jgjgjg");
+        comment.setLikename(likenames);
 
         commentService.saveComment(comment);
     }
