@@ -1,15 +1,15 @@
 server:
   port: 8080
 spring:
-  #Êı¾İÔ´ÅäÖÃ
+  #æ•°æ®æºé…ç½®
   data:
     mongodb:
-      #Ö÷»úµØÖ·
+      #ä¸»æœºåœ°å€
       host: 127.0.0.1
-      #Êı¾İ¿â
+      #æ•°æ®åº“
       database: articledb
-      #¶Ë¿Ú
+      #ç«¯å£
       port: 27017
-      #Ò²¿ÉÒÔÊ¹ÓÃuri
+      #ä¹Ÿå¯ä»¥ä½¿ç”¨uri
       #uri: mongodb://127.0.0.1:27017/articledb
 
